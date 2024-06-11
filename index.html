@@ -20,7 +20,7 @@
 
 						<!-- Logo -->
 							<div id="logo">
-								<h1><a href="index.html">Switching realities</a></h1>
+								<h1>Switching realities</h1>
 							</div>
 
 						<!-- Nav --><!--
@@ -53,20 +53,51 @@
 					</header>
 				</div>
 
+
+			<style>
+				/* Ajoutez vos styles CSS ici */
+				body {
+					font-family: Arial, sans-serif;
+				}
+				#banner-wrapper {
+					background-color: #f0f0f0;
+					padding: 10px;
+				}
+				a {
+					color: blue; /* Couleur du texte du lien par défaut */
+					text-decoration: none; /* Enlever la décoration du texte par défaut */
+				}
+				a:hover {
+					background-color: white; /* Couleur de fond lorsque la souris passe sur le lien */
+					color: blue; /* Couleur du texte lorsque la souris passe sur le lien */
+				}
+			</style>
+
+			<script>
+				document.getElementById('team-link').addEventListener('click', function(event) {
+					event.preventDefault(); // Empêche le lien de fonctionner immédiatement
+					this.classList.add('highlight'); // Ajoute la classe de surlignage
+					setTimeout(() => {
+						window.location.href = this.href; // Redirige après un court délai
+					}, 300); // Délai de 300ms avant la redirection
+				});
+			</script>
+			
 			<!-- Banner -->
 			<div id="banner-wrapper">
-					<div id="banner" class="box container">
-						<div class="row">
-							<div class="col-7 col-12-medium">
-								<h2>Welcome in our Realities</h2>
-							</div>
-							<section class="box feature">
-										<a href="#" class="image featured"><img src="images/menu.jpg" alt="" /></a>
-							<div class="col-5 col-12-medium">
-							</div>
+				<div id="banner" class="box container">
+					<div class="row">
+						<div class="col-7 col-12-medium">
+							<h2>Welcome in our Realities</h2>
+							<h3><a href="equipe/team.html" id="team-link" target="_blank">l'équipe</a></h3>
 						</div>
+						<section class="box feature">
+							<a href="#" class="image featured"><img src="images/menu.jpg" alt="" /></a>
+							<div class="col-5 col-12-medium"></div>
+						</section>
 					</div>
 				</div>
+			</div>
 
 			<!-- Features -->
 				<div id="features-wrapper">
