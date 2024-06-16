@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipe de Développement de Jeux Vidéo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #3366ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #2554cc;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #4444dd;
+            display: flex;
+            justify-content: center; /* Centre le contenu de la barre de navigation */
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #3333cc;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 8px;
+            transition: transform 0.3s;
+            max-width: 40%;
+            height: auto;
+            margin-right: 20px;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .card-content {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .card-content p {
+            flex: 1;
+        }
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3366ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .link-button:hover {
+            background-color: #2554cc;
+        }
+        h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Les outils utilisés</h1>
+</div>
+<div class="navbar">
+    <a href="../index.html">Accueil</a>
+</div>
+<div class="content">
+    <h2>Informations Complémentaires</h2>
+    <div class="card">
+        <p>Nous avons utilisé GitHub pour la gestion du code source, C# pour la programmation, et Unity comme moteur de jeu.</p>
+        <a href="https://kenney-assets.itch.io/1-bit-platformer-pack" class="link-button">la Tile Map</a>
+    </div>
+    <div class="card">
+        <h3>Unity</h3>
+        <div class="card-content">
+            <img src="../images/Unity.png" alt="Unity">
+            <p>Unity est un moteur de jeu multiplateforme développé par Unity Technologies. Il est utilisé pour créer des jeux vidéo en 2D et en 3D ainsi que des simulations pour ordinateurs, consoles et appareils mobiles.</p>
+        </div>
+    </div>
+    <div class="card">
+        <h3>GitHub</h3>
+        <div class="card-content">
+            <img src="../images/github.png" alt="GitHub">
+            <p>GitHub est une plateforme de développement collaboratif qui permet de stocker et de gérer des projets de code source. Elle facilite la collaboration entre les développeurs en offrant des outils de suivi des modifications et de gestion des versions.</p>
+        </div>
+    </div>
+    <div class="card">
+        <h3>C#</h3>
+        <div class="card-content">
+            <img src="../images/c%23.jpg" alt="C#" style="width:275px;height:275px;">
+            <p>C# est un langage de programmation moderne, simple et puissant développé par Microsoft. Il est largement utilisé pour le développement d'applications sur la plateforme .NET et est particulièrement populaire dans le développement de jeux grâce à son intégration avec Unity.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
